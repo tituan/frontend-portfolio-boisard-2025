@@ -8,7 +8,7 @@ const projects = [
     link: "https://www.altarea-solutions-services.com/",
     description:
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
-    // isModal: true, // pour l’exemple, uniquement ce projet avait un lien modal dans ton code original
+    // isModal: true, // pour l’exemple, uniquement ce projet avait un lien modal 
   },
   {
     title: "Volkswagen - E-mobilite",
@@ -69,7 +69,7 @@ export default function Project() {
                       className="item__top__action__btn js-video-play js-modal-open"
                       data-modal={`video-${i}`}
                     >
-                      {/* Modal / Play icon if needed */}
+                      {/* icon */}
                     </div>
                   </div>
                 )}
