@@ -45,7 +45,7 @@ export default function Interest() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     responsive: [
       {
         breakpoint: 768, // mobile
@@ -74,7 +74,7 @@ export default function Interest() {
           <Slider {...settings} className="interest__galery__wrapper">
             {galleryItems.map((item, i) => (
               <div className="itemGalery" key={i}>
-                <Link href={item.link} target="_blank" rel="noopener noreferrer" className="itemGalery__pic">
+                {/* <Link href={item.link} target="_blank" rel="noopener noreferrer" className="itemGalery__pic">
                   <Image
                     src={item.src}
                     alt={item.alt}
@@ -82,7 +82,16 @@ export default function Interest() {
                     height={250}
                     className="itemGalery__pic__img"
                   />
-                </Link>
+                </Link> */}
+                <div className="itemGalery__pic">
+                  <Image
+                    src={item.src}
+                    alt={item.alt}
+                    width={400}
+                    height={250}
+                    className="itemGalery__pic__img"
+                  />
+                </div>
               </div>
             ))}
           </Slider>

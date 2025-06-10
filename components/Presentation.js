@@ -1,5 +1,8 @@
 import Link from 'next/link';
 import Image from "next/image";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 
 export default function Presentation() {
   return (
@@ -31,10 +34,10 @@ export default function Presentation() {
           />
           <div className="presentation__visuel__links">
             <Link href="https://github.com/tituan" target="_blank" className="presentation__visuel__links__icon">
-              <i className="fa-brands fa-github"></i>
+              <FontAwesomeIcon icon={faGithub} />
             </Link>
             <Link href="https://www.linkedin.com/in/antoine-boisard-216a0741/" className="presentation__visuel__links__icon">
-              <i className="fa-brands fa-linkedin"></i>
+              <FontAwesomeIcon icon={faLinkedin} />
             </Link>
           </div>
         </div>

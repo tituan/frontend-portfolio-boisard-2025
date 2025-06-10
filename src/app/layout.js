@@ -1,5 +1,6 @@
 import { Roboto, Geist, Geist_Mono, Courier_Prime } from "next/font/google";
 import '../../styles/main.scss';
+import '../../lib/fontawesome';
 
 const roboto = Roboto({
   variable: "--font-roboto",
