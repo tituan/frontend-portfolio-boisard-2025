@@ -7,7 +7,7 @@ const projects = [
     alt: "Altarea Solution & services",
     link: "https://www.altarea-solutions-services.com/",
     description:
-      "Plateforme présentant l&rsquo;offre de services immobiliers (gestion de patrimoine, investissement) pour le groupe Altarea.",
+      "Plateforme présentant l'offre de services immobiliers (gestion de patrimoine, investissement) pour le groupe Altarea.",
   },
   {
     title: "Volkswagen - E-mobilite",
@@ -15,7 +15,7 @@ const projects = [
     alt: "Volkswagen E-mobilité",
     link: "https://nouvelles-mobilites-vwfs.fr/",
     description:
-      "Développement du site présentant l&rsquo;offre de mobilité du groupe Volkswagen (location longue durée, flottes entreprises).",
+      "Développement du site présentant l'offre de mobilité du groupe Volkswagen (location longue durée, flottes entreprises).",
   },
   {
     title: "Ogic Patrimoine",
