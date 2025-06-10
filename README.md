@@ -1,3 +1,10 @@
+# Antoine Boisard – Portfolio
+
+Personal portfolio website built with [Next.js](https://nextjs.org), showcasing my work as a front-end developer and passionate photographer.  
+Modern React, SCSS, optimized Google Fonts, and mobile-first design.
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
