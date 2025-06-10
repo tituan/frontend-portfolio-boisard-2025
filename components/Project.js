@@ -7,7 +7,7 @@ const projects = [
     alt: "Altarea Solution & services",
     link: "https://www.altarea-solutions-services.com/",
     description:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+      "Plateforme présentant l'offre de services immobiliers (gestion de patrimoine, investissement) pour le groupe Altarea.",
     // isModal: true, // pour l’exemple, uniquement ce projet avait un lien modal 
   },
   {
@@ -16,7 +16,7 @@ const projects = [
     alt: "Volkswagen E-mobilité",
     link: "https://nouvelles-mobilites-vwfs.fr/",
     description:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+      "Développement du site présentant l'offre de mobilité du groupe Volkswagen (location longue durée, flottes entreprises).",
   },
   {
     title: "Ogic Patrimoine",
@@ -24,23 +24,23 @@ const projects = [
     alt: "Ogic Patrimoine",
     link: "https://www.ogic-patrimoine.fr/login",
     description:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+      "Espace professionnel offrant une visibilité complète sur le catalogue de biens et les disponibilités de lots pour les partenaires.",
   },
-  {
-    title: "Altarea Patrimoine",
-    img: "/img/altarea-patrimoine.png",
-    alt: "Altarea Patrimoine",
-    link: "https://www.altarea-patrimoine.com/",
-    description:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
-  },
+//   {
+//     title: "Altarea Patrimoine",
+//     img: "/img/altarea-patrimoine.png",
+//     alt: "Altarea Patrimoine",
+//     link: "https://www.altarea-patrimoine.com/",
+//     description:
+//       "Développement de la solution dédiée à la gestion de patrimoine immobilier pour les clients particuliers du groupe Altarea.",
+//   },
   {
     title: "Edouard Denis",
     img: "/img/edouard-denis.png",
     alt: "Edouard Denis",
     link: "https://edouarddenis-immobilier.com/",
     description:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+      "Refonte et maintenance évolutive du site du promotteur immobilier Edouard Denis.",
   },
 ];
 
@@ -49,9 +49,16 @@ export default function Project() {
     <div id="project" className="project">
       <div className="project__container">
         <p className="patchTxt">Projets</p>
+        
         <p className="project__description">
-          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        En tant que développeur web front-end au sein d'une agence de communication, j'ai contribué à la réalisation de projets variés allant des sites vitrines haut-de-gamme aux plateformes interactives. Mon rôle a principalement consisté à :
         </p>
+        <ul className="project__list">
+            <li>Développer des interfaces modernes et réactives</li>
+            <li>Optimiser l'expérience utilisateur grâce à des animations fluides et des parcours intuitifs</li>
+            <li>Assurer la qualité technique (SEO, accessibilité, performances)</li>
+        </ul>
+
         <div className="project__wrapper">
           {projects.map((proj, i) => (
             <div className="item" key={proj.title}>
