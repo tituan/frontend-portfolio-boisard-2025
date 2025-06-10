@@ -91,14 +91,14 @@ export default function Project() {
               <div className="item__content">
                 <p className="item__content__title">{proj.title}</p>
                 <p className="item__content__description">{proj.description}</p>
-                <a
+                {/* <a
                   href={proj.link}
                   rel="noopener noreferrer"
                   target="_blank"
                   className="item__content__link"
                 >
                   Accéder au site
-                </a>
+                </a> */}
               </div>
             </div>
           ))}
@@ -128,14 +128,14 @@ export default function Project() {
               <div className="item__content">
                 <p className="item__content__title">{proj.title}</p>
                 <p className="item__content__description">{proj.description}</p>
-                <a
+                {/* <a
                   href={proj.link}
                   rel="noopener noreferrer"
                   target="_blank"
                   className="item__content__link"
                 >
                   Accéder au site
-                </a>
+                </a> */}
               </div>
             </div>
           ))}
