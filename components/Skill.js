@@ -87,10 +87,7 @@ export default function Skill() {
                         Zeplin
                     </div>
                     <div className="skill__category__list__text">
-                        rigueur
-                    </div>
-                    <div className="skill__category__list__text">
-                        autonomie
+                       Whimsical
                     </div>
                 </div>
             </div>
