@@ -63,10 +63,10 @@ export default function Interest() {
         <div className="interest__content">
           <p className="interest__content__title">Développeur web mais pas que !</p>
           <p className="interest__content__text">
-            La photographie est une passion qui me permet d'exprimer ma créativité et de capturer des moments précieux. À travers mes clichés, j'essaie de transmettre des émotions et de raconter des histoires visuelles.
+            La photographie est une passion qui me permet d&rsquo;exprimer ma créativité et de capturer des moments précieux. À travers mes clichés, j&rsquo;essaie de transmettre des émotions et de raconter des histoires visuelles.
           </p>
           <p className="interest__content__text">
-            La musique et l'art occupent une place essentielle dans ma vie. Ils me permettent d'explorer ma créativité, de m'exprimer et d'apprécier la beauté qui nous entoure.
+            La musique et l&rsquo;art occupent une place essentielle dans ma vie. Ils me permettent d&rsquo;explorer ma créativité, de m&rsquo;exprimer et d&rsquo;apprécier la beauté qui nous entoure.
           </p>
         </div>
         <div className="interest__galery">
@@ -88,12 +88,10 @@ export default function Interest() {
         </div>
         <div className="interest__more">
           {interests.map((interest, i) => (
-            <p key={i} className="">{interest}</p>
+            <p key={i}>{interest}</p>
           ))}
         </div>
       </div>
     </div>
   );
 }
-
-
