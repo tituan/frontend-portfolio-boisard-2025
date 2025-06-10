@@ -51,6 +51,7 @@ export default function Interest() {
         breakpoint: 768, // mobile
         settings: {
           slidesToShow: 1,
+          arrows: false,
         },
       },
     ],
