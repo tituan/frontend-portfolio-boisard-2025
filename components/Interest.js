@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from "next/image";
 import Slider from "react-slick";
 
-// Liste des images de la galerie
 const galleryItems = [
   {
     src: "/img/bronx_slide.jpg",
@@ -40,12 +39,11 @@ const interests = [
 ];
 
 export default function Interest() {
-  // Réglages du slider Slick
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2, // ou 1 en mobile
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
     responsive: [
