@@ -9,7 +9,7 @@ export default function Footer() {
 				<div className="footer__wrapper footer__wrapper--alt">
 					<a href="mailto:antoine.boisard8@gmail.com" className="footer__wrapper__link"><i className="fa-solid fa-envelope"></i></a>
 					<p className="footer__wrapper__link">
-					  <span className="footer__wrapper__link__text">Antoine Boisard 2023 <sup>&copy;</sup></span>
+					  <span className="footer__wrapper__link__text">Antoine Boisard 2025 <sup>&copy;</sup></span>
 					</p>
 					<span className="footer__wrapper__arrowTop goTop">
 						{/* <svg className="icon">
