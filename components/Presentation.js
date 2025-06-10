@@ -13,7 +13,7 @@ export default function Presentation() {
                     <p className="presentation__content__text">Au fil des années, j'ai développé des compétences solides en matière de création d'interfaces utilisateur réactives et intuitives. Je suis particulièrement attentif aux détails et à l'accessibilité, en m'assurant que chaque utilisateur, quels que soient ses besoins, puisse profiter pleinement de l'expérience en ligne. </p>
                     <p className="presentation__content__text">Au-delà des compétences techniques, je suis un fervent défenseur de l'apprentissage continu. Je suis toujours avide de me tenir au courant des dernières innovations dans le domaine du développement web et d'améliorer mes compétences. J'aime également travailler en équipe et collaborer avec des professionnels de différents horizons, car je crois fermement que l'échange d'idées et la diversité des perspectives peuvent conduire à des solutions exceptionnelles.</p>
                 </div>
-                <Link href="#" className="presentation__content__link">Mon CV</Link>
+                {/* <Link href="#" className="presentation__content__link">Mon CV</Link> */}
             </div>
             <div className="presentation__visuel">
                 {/* <div className="presentation__visuel__pic"> */}

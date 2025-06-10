@@ -42,9 +42,9 @@ export default function Hero() {
         />
       </motion.div>
 
-      <a href="#presentation" className="intro__btn smooth">
+      {/* <a href="#presentation" className="intro__btn smooth"> */}
         {/* <svg className="icon"><use xlinkHref="#icon-arrow-down"></use></svg> */}
-      </a>
+      {/* </a> */}
     </div>
   );
 }

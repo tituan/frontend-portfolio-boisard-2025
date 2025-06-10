@@ -15,6 +15,11 @@
 @use 'components/btn';
 @use 'components/slider';
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body { 
     font-family: var(--font-roboto), sans-serif; 
 }
