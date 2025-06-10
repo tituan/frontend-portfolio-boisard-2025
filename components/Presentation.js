@@ -10,7 +10,7 @@ export default function Presentation() {
             <p className="patchTxt">présentation</p>
             <h3 className="presentation__content__title">Créer des expériences web innovantes</h3>
             <p className="presentation__content__text">
-              Développeur web front-end depuis cinq ans, j’ai contribué à des projets variés mêlant esthétique, performance et accessibilité. Passionné par la création d’interfaces intuitives, je veille à offrir une expérience utilisateur optimale. Curieux et rigoureux, je me tiens à jour des évolutions du web, et j’apprécie particulièrement le travail en équipe, convaincu que la diversité des idées mène à des solutions de qualité.
+              Développeur web front-end depuis plus de cinq ans, j’ai contribué à des projets variés mêlant esthétique, performance et accessibilité. Passionné par la création d’interfaces intuitives, je veille à offrir une expérience utilisateur optimale. Curieux et rigoureux, je me tiens à jour des évolutions du web, et j’apprécie particulièrement le travail en équipe, convaincu que la diversité des idées mène à des solutions de qualité.
             </p>
             {/* <p className="presentation__content__text">
               Au fil des années, j&rsquo;ai développé des compétences solides en matière de création d&rsquo;interfaces utilisateur réactives et intuitives. Je suis particulièrement attentif aux détails et à l&rsquo;accessibilité, en m&rsquo;assurant que chaque utilisateur, quels que soient ses besoins, puisse profiter pleinement de l&rsquo;expérience en ligne.
