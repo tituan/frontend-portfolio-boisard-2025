@@ -12,66 +12,85 @@ export default function Skill() {
                 </h3>
                 <div className="skill__category__list">
                     <div className="skill__category__list__text">
-                        html
+                        Html
                     </div>
                     <div className="skill__category__list__text">
-                        css
+                        CSS / SCSS (Sass)
                     </div>
                     <div className="skill__category__list__text">
                         Javascript
                     </div>
                     <div className="skill__category__list__text">
-                        sass
+                        PHP
                     </div>
                     <div className="skill__category__list__text">
-                        git
+                        Twig
                     </div>
-                    <div className="skill__category__list__text">
-                        php
-                    </div>
-                    <div className="skill__category__list__text">
-                        twig
-                    </div>					
                 </div>
             </div>
             <div className="skill__category">
                 <h3 className="skill__category__title">
-                Outils
+                Frameworks & Librairies
                 </h3>
                 <div className="skill__category__list">
                     <div className="skill__category__list__text">
-                        grunt
+                        React
                     </div>
                     <div className="skill__category__list__text">
-                        github
+                        React Native
                     </div>
                     <div className="skill__category__list__text">
-                        symfony
+                        Next.js
+                    </div>
+                    <div className="skill__category__list__text">
+                        Express.js
+                    </div>
+                    <div className="skill__category__list__text">
+                        Symfony
+                    </div>
+                </div>
+            </div>
+            <div className="skill__category">
+                <h3 className="skill__category__title">
+                    Outils & Environnements
+                </h3>
+                <div className="skill__category__list">
+                    <div className="skill__category__list__text">
+                        Git
+                    </div>
+                    <div className="skill__category__list__text">
+                        GitHub
+                    </div>
+                    <div className="skill__category__list__text">
+                        Yarn / NPM
                     </div>
                     <div className="skill__category__list__text">
                         Terminal
                     </div>
-                    <div className="skill__category__list__text">
-                        Visual code
-                    </div>
                 </div>
             </div>
             <div className="skill__category">
                 <h3 className="skill__category__title">
-                    Design
+                    Design & Prototypage
                 </h3>
                 <div className="skill__category__list">
                     <div className="skill__category__list__text">
-                        photoshop
+                        Figma
                     </div>
                     <div className="skill__category__list__text">
                         Adobe XD
                     </div>
                     <div className="skill__category__list__text">
-                        figma
+                       Photoshop
                     </div>
                     <div className="skill__category__list__text">
-                        zeplin
+                        Zeplin
+                    </div>
+                    <div className="skill__category__list__text">
+                        rigueur
+                    </div>
+                    <div className="skill__category__list__text">
+                        autonomie
                     </div>
                 </div>
             </div>
@@ -81,22 +100,22 @@ export default function Skill() {
                 </h3>
                 <div className="skill__category__list">
                     <div className="skill__category__list__text">
-                        travail en équipe
+                        Travail en équipe
                     </div>
                     <div className="skill__category__list__text">
-                        management
+                        Management
                     </div>
                     <div className="skill__category__list__text">
-                        organisation
+                       Organisation
                     </div>
                     <div className="skill__category__list__text">
-                        adaptabilité
+                        Adaptabilité
                     </div>
                     <div className="skill__category__list__text">
-                        rigueur
+                        Rigueur
                     </div>
                     <div className="skill__category__list__text">
-                        autonomie
+                        Autonomie
                     </div>
                 </div>
             </div>
