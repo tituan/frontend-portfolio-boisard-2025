@@ -14,3 +14,7 @@
 @use 'components/patchTxt';
 @use 'components/btn';
 @use 'components/slider';
+
+body {
+  font-family: 'Roboto', sans-serif;
+}

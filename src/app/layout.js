@@ -1,5 +1,12 @@
-import { Geist, Geist_Mono, Courier_Prime } from "next/font/google";
+import { Roboto, Geist, Geist_Mono, Courier_Prime } from "next/font/google";
 import '../../styles/main.scss';
+
+const roboto = Roboto({
+  variable: "--font-roboto",
+  subsets: ["latin"],
+  weight: ["400", "700"], // Ajoute "300", "500" si tu veux
+  display: "swap",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -48,7 +55,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fr"><body className={`${geistSans.variable} ${geistMono.variable} ${courierPrime.variable}`}>
+    <html lang="fr"><body className={`${roboto.variable} ${geistSans.variable} ${geistMono.variable} ${courierPrime.variable}`}>
       {children}
     </body></html>
   );
