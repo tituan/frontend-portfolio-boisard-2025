@@ -7,8 +7,8 @@ export default function Header() {
 			<div className="header__container">
 				<div className="header__logo">
           <Image
-            src="/img/antoine-boisard.jpg"
-            alt="Logo de mon portfolio"
+            src="/img/new-logo-ab.png"
+            alt="Logo Antoine Boisard"
             width={50}
             height={50}
             className="header__logo__image"/>
