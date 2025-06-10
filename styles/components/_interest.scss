@@ -1,0 +1,85 @@
+.interest {
+  padding: 60px 20px;
+  background-color: #232424;
+  @media only screen and (min-width: 850px) {
+    padding: 60px 100px 120px;
+  }
+  &__container {
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    .patchTxt {
+      border-color: #fff;
+      background-color: #232424;
+      margin-bottom: 40px;
+      color: #fff;
+    }
+  }
+  &__content {
+    color: #fff;
+    margin-bottom: 40px;
+    @media only screen and (min-width: 850px) {
+      margin-bottom: 60px;
+      max-width: 50%;
+    }
+    &__title {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      @media only screen and (min-width: 850px) {
+        font-size: 1.375rem;
+        margin-bottom: 30px;
+      }
+    }
+    &__text {
+      font-size: .9375rem;
+      line-height: 1.2;
+      font-family: "Courier Prime";
+      margin-bottom: 15px;
+    }
+  }
+  &__galery {
+    margin-bottom: 70px;
+    @media only screen and (min-width: 850px) {
+      margin-bottom: 80px;
+    }
+    &__wrapper {
+      @media only screen and (min-width: 850px) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  &__more {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: .875rem;
+    p {
+      margin-right: 10px;
+      text-transform: uppercase;
+    }
+  }
+}
+.itemGalery {
+  height: 450px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 0 10px;
+  @media only screen and (min-width: 850px) {
+    width: 32%;
+    margin-bottom: 0;
+    padding: 0 20px;
+  }
+  &__pic__img {
+    object-fit: cover;
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+  }
+}

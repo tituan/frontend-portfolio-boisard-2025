@@ -1,0 +1,40 @@
+.slick-list {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 33px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding-right: 30px;
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  li {
+    text-indent: -9999px;
+    height: 15px;
+    width: 15px;
+    margin: 0 6px;
+    background-color: rgba(255,255,255,.5);
+    border: transparent;
+    display: inline-block;
+    transition: background-color .6s ease;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  ul .slick-active {
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    outline: none;
+    margin-top: 0px;
+    border-radius: 10px;
+  }
+}

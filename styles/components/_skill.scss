@@ -1,0 +1,109 @@
+.skill {
+  padding: 60px 20px;
+  background-color: #232424;
+  @media only screen and (min-width: 850px) {
+    width: 100%;
+    display: flex;
+    padding: 60px 100px;
+  }
+  &__container {
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    .patchTxt {
+      border-color: #fff;
+      background-color: #232424;
+      color: #fff;
+    }
+  }
+  &__category {
+    color: #fff;
+    margin-bottom: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &--reverse { align-items: flex-end; }
+    &--reverse .skill__category__list__text:last-child { margin-right: 0; }
+    &__title {
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      &__text {
+        padding: 10px 15px;
+        background-color: #fff;
+        font-family: "Courier Prime";
+        text-transform: uppercase;
+        color: #000;
+        font-size: 1rem;
+        margin-right: 20px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  &__graph {
+    @media only screen and (min-width: 850px) {
+      width: 50%;
+      padding: 100px 0 100px;
+      border-radius: 8px;
+    }
+    &__line {
+      margin-bottom: 20px;
+      @media only screen and (min-width: 850px) {
+        margin-bottom: 39px;
+        &:last-child { margin-bottom: 0; }
+      }
+      &__label {
+        font-size: .75rem;
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        @media only screen and (min-width: 850px) {
+          display: none;
+        }
+      }
+      &__bar {
+        position: relative;
+        width: 100%;
+        height: 20px;
+        border-radius: 10px;
+        border: 2px solid #000;
+        @media only screen and (min-width: 850px) {
+          border: 2px solid #fff;
+        }
+        &__level {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 70%;
+          border-radius: 10px;
+          background-color: #000;
+          @media only screen and (min-width: 850px) {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+  &__list {
+    display: none;
+    @media only screen and (min-width: 850px) {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      padding: 0 0 100px 50px;
+      ul li {
+        font-size: 1rem;
+        font-family: "Courier Prime";
+        margin-bottom: 40px;
+        color: #fff;
+        &:last-child { margin-bottom: 0; }
+      }
+    }
+  }
+}

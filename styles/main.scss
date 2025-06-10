@@ -2,3 +2,15 @@
 @use './base/_variables';
 @use './base/_mixins';
 // @use './base/fonts';
+
+@use 'components/header';
+@use 'components/footer';
+@use 'components/presentation';
+@use 'components/hero';
+@use 'components/skill';
+@use 'components/project';
+@use 'components/interest';
+@use 'components/quote';
+@use 'components/patchTxt';
+@use 'components/btn';
+@use 'components/slider';

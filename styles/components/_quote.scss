@@ -1,0 +1,29 @@
+.quote {
+  position: relative;
+  padding: 60px 20px;
+  background-color: #fcfdf9;
+  @media only screen and (min-width: 850px) {
+    width: 100%;
+    padding: 100px;
+  }
+  &__container {
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__text {
+    font-family: "Roboto", sans-serif;
+    color: #232424;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: center;
+    @media only screen and (min-width: 850px) {
+      font-size: 1.875rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+}
