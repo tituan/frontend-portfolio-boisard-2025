@@ -53,41 +53,64 @@
     border: none;
     color: $color-white;
     text-transform: uppercase;
-    font-family: $font-primary;
+    font-family: $font-secondary;
     font-size: .875rem;
     cursor: pointer;
     transition: opacity 0.3s;
     text-align: center;
-    font-family: $font-secondary;
 
     &:hover { opacity: 0.7; }
   }
 
   &__copyright {
-    font-family: $font-primary;
+    font-family: $font-secondary;
     font-size: .875rem;
     color: $color-white;
     margin: 0;
     text-align: center;
     text-transform: uppercase;
-    font-family: $font-secondary;
   }
 
   &__modal {
     background-color: $color-white;
+    color: $color-dark;
     padding: 40px;
-    max-width: 600px;
+    max-width: 700px;
+    max-height: 90vh;
     margin: auto;
     border-radius: 8px;
     outline: none;
+    overflow-y: auto;
+    z-index: 9999;
+    font-family: $font-secondary;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 
-    &__overlay {
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-color: rgba(0, 0, 0, 0.8);
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    h2, h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 1.2rem;
     }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    a {
+      color: $color-dark;
+      text-decoration: underline;
+    }
+  }
+
+  &__modal__overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
