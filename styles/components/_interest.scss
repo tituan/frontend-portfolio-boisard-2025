@@ -6,7 +6,7 @@
   background-color: $color-dark;
 
   @media only screen and (min-width: 850px) {
-    padding: 60px 100px 120px;
+    padding: 60px 100px 80px;
   }
 
   &__container {
@@ -155,3 +155,33 @@
   }
 }
 
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border: 2px solid $color-white;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // Triangle en CSS pur
+  &::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 12px solid $color-white;  // largeur du triangle
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    margin-left: 3px; // léger décalage pour centrer optiquement
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}

@@ -1,4 +1,5 @@
 'use client';
+
 import Link from 'next/link';
 import Image from "next/image";
 import Slider from "react-slick";
@@ -102,6 +103,7 @@ export default function Interest() {
 function GalleryItem({ item }) {
   const videoRef = useRef(null);
   const [isMobile, setIsMobile] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -136,8 +138,10 @@ function GalleryItem({ item }) {
       const video = videoRef.current;
       if (video.paused) {
         video.play();
+        setIsPlaying(true);
       } else {
         video.pause();
+        setIsPlaying(false);
       }
     }
   };
@@ -160,18 +164,23 @@ function GalleryItem({ item }) {
           />
         )}
         {item.type === "video" && (
-          <video
-            ref={videoRef}
-            src={item.src}
-            poster={item.poster}
-            width={400}
-            height={250}
-            muted
-            loop
-            playsInline
-            preload="auto"
-            className="itemGalery__pic__video"
-          />
+          <>
+            <video
+              ref={videoRef}
+              src={item.src}
+              poster={item.poster}
+              width={400}
+              height={250}
+              muted
+              loop
+              playsInline
+              preload="auto"
+              className="itemGalery__pic__video"
+            />
+            {isMobile && !isPlaying && (
+              <div className="play-icon"></div>
+            )}
+          </>
         )}
         <div className="itemGalery__overlay">
           <h3>{item.title}</h3>
