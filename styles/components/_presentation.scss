@@ -1,3 +1,5 @@
+@import '../base/_variables'; 
+
 .presentation {
     scroll-margin-top: 70px;
   background-color: #fcfdf9;
@@ -77,7 +79,7 @@
       }
       &__icon {
         position: relative;
-        background-color: #fff;
+        background-color: $color-white;
         width: 40px;
         height: 40px;
         border-radius: 25px;

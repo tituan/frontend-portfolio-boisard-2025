@@ -1,7 +1,9 @@
+@import '../base/_variables'; 
+
 .skill {
     scroll-margin-top: 70px;
   padding: 60px 20px;
-  background-color: #232424;
+  background-color: $color-dark;
   @media only screen and (min-width: 850px) {
     width: 100%;
     display: flex;
@@ -13,13 +15,13 @@
     margin-left: auto;
     margin-right: auto;
     .patchTxt {
-      border-color: #fff;
-      background-color: #232424;
-      color: #fff;
+      border-color: $color-white;
+      background-color: $color-dark;
+      color: $color-white;
     }
   }
   &__category {
-    color: #fff;
+    color: $color-white;
     margin-bottom: 35px;
     width: 100%;
     display: flex;
@@ -36,7 +38,7 @@
       flex-wrap: wrap;
       &__text {
         padding: 6px 12px;
-        background-color: #fff;
+        background-color: $color-white;
         font-family: "Courier Prime";
         text-transform: uppercase;
         color: #000;
@@ -74,7 +76,7 @@
         border-radius: 10px;
         border: 2px solid #000;
         @media only screen and (min-width: 850px) {
-          border: 2px solid #fff;
+          border: 2px solid $color-white;
         }
         &__level {
           position: absolute;
@@ -85,7 +87,7 @@
           border-radius: 10px;
           background-color: #000;
           @media only screen and (min-width: 850px) {
-            background-color: #fff;
+            background-color: $color-white;
           }
         }
       }
@@ -102,7 +104,7 @@
         font-size: 1rem;
         font-family: "Courier Prime";
         margin-bottom: 40px;
-        color: #fff;
+        color: $color-white;
         &:last-child { margin-bottom: 0; }
       }
     }

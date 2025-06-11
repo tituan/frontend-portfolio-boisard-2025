@@ -1,3 +1,14 @@
-// 🎨 Palette principale : Tu définis ici toutes les valeurs réutilisables : couleurs, tailles, typos…
-$color-black: #000000;
-$color-white: #ffffff;
+// ---------- Couleurs principales ----------
+$color-dark: #232424;
+$color-black: #000;
+$color-white: #fff;
+$color-off-white: #fcfdf9;
+
+// ---------- Opacités & overlays ----------
+$overlay-dark: rgba(35, 36, 36, 0.1);
+$shadow-light: rgba(0, 0, 0, 0.05);
+$shadow-medium: rgba(0, 0, 0, 0.2);
+
+// ---------- Fonts ----------
+$font-primary: "Roboto", sans-serif;
+$font-secondary: "Courier Prime", monospace;

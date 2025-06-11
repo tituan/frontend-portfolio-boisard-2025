@@ -1,7 +1,9 @@
+@import '../base/_variables'; 
+
 .interest {
     scroll-margin-top: 70px;
   padding: 60px 20px;
-  background-color: #232424;
+  background-color: $color-dark;
   @media only screen and (min-width: 850px) {
     padding: 60px 100px 120px;
   }
@@ -11,14 +13,14 @@
     margin-left: auto;
     margin-right: auto;
     .patchTxt {
-      border-color: #fff;
-      background-color: #232424;
+      border-color: $color-white;
+      background-color: $color-dark;
       margin-bottom: 40px;
-      color: #fff;
+      color: $color-white;
     }
   }
   &__content {
-    color: #fff;
+    color: $color-white;
     margin-bottom: 40px;
     @media only screen and (min-width: 850px) {
       margin-bottom: 60px;
@@ -55,7 +57,7 @@
   &__more {
     display: flex;
     flex-wrap: wrap;
-    color: #fff;
+    color: $color-white;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: .875rem;

@@ -1,3 +1,5 @@
+@import '../base/_variables'; 
+
 .quote {
   position: relative;
   padding: 60px 20px;
@@ -14,7 +16,7 @@
   }
   &__text {
     font-family: "Roboto", sans-serif;
-    color: #232424;
+    color: $color-dark;
     font-style: italic;
     font-weight: 700;
     font-size: 1.5rem;

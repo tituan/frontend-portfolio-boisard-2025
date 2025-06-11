@@ -1,8 +1,10 @@
+@import '../base/_variables'; 
+
 .project {
     scroll-margin-top: 70px;
   position: relative;
   padding: 60px 20px;
-  border-bottom: 2px solid #232424;
+  border-bottom: 2px solid $color-dark;
   background-color: #fcfdf9;
   @media only screen and (min-width: 850px) {
     padding: 60px 100px;
@@ -13,7 +15,7 @@
     bottom: -5px;
     width: 30px;
     height: 8px;
-    background-color: #232424;
+    background-color: $color-dark;
     z-index: 10;
     @media only screen and (min-width: 850px) {
       width: 40px;
@@ -44,29 +46,29 @@
   &__description {
     font-size: .75rem;
     font-family: "Courier Prime";
-    color: #232424;
+    color: $color-dark;
     line-height: 2;
      font-weight: 700;
-    // text-align: center;
+
     
     @media only screen and (min-width: 850px) {
       font-size: .875rem;
     }
   }
   &__list {
-    // text-align: center;
+
     font-family: "Courier Prime";
-    color: #232424;
+    color: $color-dark;
     line-height: 1.5;
     margin-top: 10px;
     margin-bottom: 40px;
         li {
             margin-bottom: 10px;
-            // margin-left: 20px;
+
             font-size: .75rem;
            
             @media only screen and (min-width: 850px) {
-                // margin-left: 40px;
+            
                 font-size: .8rem;
             }
         }
@@ -100,7 +102,7 @@
     height: 200px;
     border-radius: 8px 8px 0 0;
     border-width: 2px 2px 2px 2px;
-    border-color: #232424;
+    border-color: $color-dark;
     border-style: solid;
     overflow: hidden;
     @media only screen and (min-width: 1025px) {
@@ -139,7 +141,7 @@
         width: 80px;
         height: 80px;
         border-radius: 40px;
-        background-color: #fff;
+        background-color: $color-white;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -149,7 +151,7 @@
           right: -4px;
           width: 35px;
           height: 35px;
-          fill: #232424;
+          fill: $color-dark;
         }
       }
     }
@@ -157,7 +159,7 @@
   &__content {
     font-family: "Roboto", sans-serif;
     padding: 20px;
-    background-color: #232424;
+    background-color: $color-dark;
     border-radius: 0 0 8px 8px;
     border-width: 0 2px 2px 2px;
     border-color: #000;
@@ -169,11 +171,11 @@
       font-size: 1.0625rem;
       margin-bottom: 10px;
       font-weight: 700;
-      color: #fff;
+      color: $color-white;
       text-transform: uppercase;
     }
     &__description {
-      color: #fff;
+      color: $color-white;
       font-family: "Courier Prime";
       font-size: .75rem;
       margin-bottom: 20px;
@@ -185,7 +187,7 @@
     &__link {
       font-size: .6875rem;
       text-decoration: none;
-      color: #fff;
+      color: $color-white;
       font-family: "Courier Prime";
       letter-spacing: 0;
       display: block;

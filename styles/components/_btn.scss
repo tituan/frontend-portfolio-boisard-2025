@@ -1,6 +1,8 @@
+@import '../base/_variables'; 
+
 .btn p {
   text-decoration: none;
-  color: #fff;
+  color: $color-white;
   background-color: #50b0b3;
   font-size: 1rem;
   text-transform: uppercase;
