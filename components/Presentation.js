@@ -26,7 +26,7 @@ export default function Presentation() {
         </div>
         <div className="presentation__visuel">
           <Image
-            src="/img/antoine-boisard.jpg"
+            src="/img/antoine-boisard-portrait.png"
             alt="Antoine Boisard"
             width={500}
             height={500}
