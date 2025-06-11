@@ -16,7 +16,7 @@ export default function Footer() {
         {/* Colonne 1 : Contact uniquement en icônes */}
         <div className="footer__column">
           <div className="footer__iconGroup">
-            <a href="tel:+33612345678" className="footer__icon">
+            <a href="tel:+33616377154" className="footer__icon">
               <FontAwesomeIcon icon={faPhone} style={{ color: '#ffffff', fontSize: '24px' }} />
             </a>
             <a href="mailto:antoine.boisard8@gmail.com" className="footer__icon">
@@ -30,7 +30,7 @@ export default function Footer() {
           <button className="footer__textLink" onClick={() => setModalIsOpen(true)}>
             Mentions légales
           </button>
-          <p className="footer__copyright">Antoine Boisard 2025 <sup>&copy;</sup></p>
+          <p className="footer__copyright">Antoine Boisard 2025<sup>&copy;</sup></p>
         </div>
 
         {/* Colonne 3 : Réseaux sociaux */}
@@ -56,7 +56,7 @@ export default function Footer() {
         ariaHideApp={false}
       >
         <h2>Mentions légales</h2>
-        <p>Ici tu peux mettre le contenu de tes mentions légales…</p>
+        <p>Lorem ipsum</p>
         <button onClick={() => setModalIsOpen(false)}>Fermer</button>
       </Modal>
     </footer>
