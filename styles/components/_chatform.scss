@@ -1,0 +1,50 @@
+@use '../base/variables' as *;
+
+.chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: $color-dark;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  font-size: 24px;
+  z-index: 999;
+}
+
+.chat-box {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  width: 300px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  padding: 20px;
+  z-index: 999;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.chat-step {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-step input,
+.chat-step textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

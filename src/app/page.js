@@ -1,3 +1,5 @@
+'use client';
+
 import Image from "next/image";
 import '../../styles/pages/home.scss';
 import "slick-carousel/slick/slick.css";
@@ -11,7 +13,7 @@ import Quote from "../../components/Quote";
 import Footer from "../../components/Footer";
 import Interest from "../../components/Interest";
 import FadeInSection from "../../components/FadeInSection";
-
+import ChatForm from "../../components/ChatForm"; 
 
 export default function Home() {
   return (
@@ -28,6 +30,7 @@ export default function Home() {
         </div>
       </main>
       <Footer />
+      <ChatForm />  {/* <-- Widget chat intégré ici, toujours présent */}
     </div>
   );
 }
