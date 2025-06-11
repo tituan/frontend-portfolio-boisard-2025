@@ -33,6 +33,14 @@ const projects = [
     description:
       "Refonte et maintenance évolutive du site du promotteur immobilier Edouard Denis.",
   },
+  {
+    title: "Elixir Immo",
+    img: "/img/elixir-illustration.png",
+    alt: "Elixir Immo",
+    link: "https://elixir.immo/",
+    description:
+      "Développement front-end du back-office de la solution Elixir, plateforme digitale dédiée à la gestion des ventes de biens immobiliers neufs",
+  },
 ];
 
 const projectsPerso = [
@@ -51,6 +59,14 @@ const projectsPerso = [
     link: "#",
     description:
       "Kiddiz est une application mobile dédiée à la revente de jouets et équipements pour enfants, entre particuliers.",
+  },
+  {
+    title: "Paname Studio",
+    img: "/img/logo-paname-studio.jpg",
+    alt: "PANAME STUDIO",
+    link: "#",
+    description:
+      "Site créatif : design graphique, contenus photo et vidéo, production digitale et créations web.",
   },
 ];
 
