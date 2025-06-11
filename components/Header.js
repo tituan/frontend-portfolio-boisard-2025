@@ -47,7 +47,7 @@ export default function Header() {
       <div className="header__container">
         <div className="header__logo">
           <Image
-            src="/img/new-logo-ab.png"
+            src="/img/new-logo-ab.svg"
             alt="Logo Antoine Boisard"
             width={50}
             height={50}
