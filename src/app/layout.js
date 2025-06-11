@@ -28,17 +28,17 @@ const courierPrime = Courier_Prime({
 
 export const metadata = {
   title: "Antoine BOISARD - Dev Front End",
-  description: "Portfolio de Antoine BOISARD, développeur Web Front-End et photographe passionné. Découvrez mes projets Web et mes clichés. Paris 75",
+  description: "Portfolio Antoine BOISARD, développeur Web Front-End et photographe passionné. Découvrez mes projets Web et clichés - Paris 75",
   keywords: "développeur web, portfolio, photographie, next.js, react, dev",
   authors: [{ name: "Antoine BOISARD" }],
   openGraph: {
     title: "Antoine BOISARD - Dev Front End",
-    description: "Développeur web et photographe passionné",
+    description: "Portfolio de Antoine BOISARD, développeur Web Front-End et photographe passionné. Découvrez mes projets Web et clichés - Paris 75",
     url: "https://antoineboisard.fr",
     siteName: "Antoine BOISARD - Portfolio",
     images: [
       {
-        url: "/img/og-image.jpg", // Mettez une image dans public/img/
+        url: "/img/og-image.jpg", 
         width: 1200,
         height: 630,
       },
