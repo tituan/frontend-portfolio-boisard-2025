@@ -20,7 +20,7 @@ export default function Loader({ onFinish }) {
           'polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)',  // point central
           'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)'   // tout l'écran
         ]
-      }, { duration: 1.5, ease: 'linear' });
+      }, { duration: 1, ease: 'linear' });
 
       // 3) Fade-out
       await overlay.start({ opacity: 0 }, { duration: 0.3, ease: 'linear' });
