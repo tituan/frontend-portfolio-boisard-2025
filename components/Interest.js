@@ -81,10 +81,7 @@ export default function Interest() {
         <div className="interest__content">
           <p className="interest__content__title">Développeur web mais pas que !</p>
           <p className="interest__content__text">
-            La photographie est une passion qui me permet d&rsquo;exprimer ma créativité et de capturer des moments précieux.
-          </p>
-          <p className="interest__content__text">
-            La musique et l&rsquo;art occupent une place essentielle dans ma vie.
+            La photographie et la vidéo sont des passions qui me permettent d&rsquo;exprimer ma créativité, de capturer des moments précieux et de raconter des histoires à travers l&rsquo;image. La musique et l&rsquo;art occupent également une place essentielle dans ma vie.
           </p>
         </div>
         <div className="interest__galery">
