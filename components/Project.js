@@ -50,7 +50,7 @@ const projectsPerso = [
     alt: "Kiddiz APP",
     link: "#",
     description:
-      "Kiddiz est une application dédiée à la revente de jouets et équipements pour enfants de 0 à 14 ans, entre particuliers.",
+      "Kiddiz est une application mobile dédiée à la revente de jouets et équipements pour enfants, entre particuliers.",
   },
 ];
 
