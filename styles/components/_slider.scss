@@ -1,42 +1,49 @@
-@import '../base/_variables'; 
+@import '../base/_variables';
 
 .slick-list {
   width: 100%;
   display: block;
   position: relative;
 }
+
 .slick-dots {
   display: flex;
   justify-content: center;
-  margin-top: 33px;
   position: absolute;
   bottom: 20px;
   width: 100%;
   padding-right: 30px;
+
   ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 0;
+    margin: 0;
   }
+
   li {
-    text-indent: -9999px;
-    height: 15px;
-    width: 15px;
-    margin: 0 6px;
-    background-color: rgba(255,255,255,.5);
-    border: transparent;
-    display: inline-block;
-    transition: background-color .6s ease;
-    outline: none;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-  ul .slick-active {
-    height: 15px;
-    width: 15px;
-    background-color: $color-white;
-    outline: none;
-    margin-top: 0px;
-    border-radius: 10px;
+    
+    width: auto!important;
+    height: auto!important;
+
+    button {
+        margin: 0 2px!important;
+      text-indent: -9999px;  // masque le texte à l'intérieur
+      width: 10px!important;           // longueur de la barre (modifie ici si tu veux plus court ex: 10px)
+      height: 5px!important;           // épaisseur de la barre
+      background-color: rgba(255, 255, 255, 0.4)!important; // couleur inactif
+      border: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+      border-radius: 2px;   // rend la barre bien arrondie aux extrémités
+      padding: 0;
+      padding: 0!important;
+      cursor: pointer;
+    }
+
+    &.slick-active button {
+      background-color: $color-white!important; // couleur actif
+    }
   }
 }

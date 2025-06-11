@@ -1,17 +1,20 @@
 @import '../base/_variables'; 
 
 .interest {
-    scroll-margin-top: 70px;
+  scroll-margin-top: 70px;
   padding: 60px 20px;
   background-color: $color-dark;
+
   @media only screen and (min-width: 850px) {
     padding: 60px 100px 120px;
   }
+
   &__container {
     width: 100%;
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
+
     .patchTxt {
       border-color: $color-white;
       background-color: $color-dark;
@@ -19,24 +22,28 @@
       color: $color-white;
     }
   }
+
   &__content {
     color: $color-white;
     margin-bottom: 40px;
+
     @media only screen and (min-width: 850px) {
       margin-bottom: 60px;
       max-width: 50%;
     }
+
     &__title {
-    font-size: 1.125rem;
-      font-weight: 700;
+      font-size: 1.125rem;
+      font-weight: 300;
       margin-bottom: 15px;
       text-transform: uppercase;
-      font-weight: 300;
+
       @media only screen and (min-width: 850px) {
         font-size: 1.375rem;
         margin-bottom: 30px;
       }
     }
+
     &__text {
       font-size: .9375rem;
       line-height: 1.2;
@@ -44,11 +51,14 @@
       margin-bottom: 15px;
     }
   }
+
   &__galery {
     margin-bottom: 70px;
+
     @media only screen and (min-width: 850px) {
       margin-bottom: 80px;
     }
+
     &__wrapper {
       @media only screen and (min-width: 850px) {
         display: flex;
@@ -56,6 +66,7 @@
       }
     }
   }
+
   &__more {
     display: flex;
     flex-wrap: wrap;
@@ -63,28 +74,85 @@
     font-family: $font-primary;
     font-weight: 700;
     font-size: .875rem;
+
     p {
       margin-right: 10px;
       text-transform: uppercase;
     }
   }
 }
+
+// Galerie portrait optimisée mobile
 .itemGalery {
-  height: 450px;
   width: 100%;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  overflow: hidden;
   padding: 0 10px;
+  margin-bottom: 20px;
+  position: relative;
+  max-width: 380px; // <-- taille fixe plus large de chaque slide (ajustable selon ton rendu)
+
   @media only screen and (min-width: 850px) {
-    width: 32%;
-    margin-bottom: 0;
+    max-width: 400px;
     padding: 0 20px;
+    margin-bottom: 0;
   }
-  &__pic__img {
-    object-fit: cover;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  &__pic {
+    position: relative;
     width: 100%;
-    height: 450px;
+    aspect-ratio: 3 / 4; 
     border-radius: 8px;
+    overflow: hidden;
+
+    &__img, &__video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    &:hover &__img, &:hover &__video {
+      transform: scale(1.1);
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    color: $color-white;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    transition: opacity 0.5s ease;
+
+    h3 {
+      font-size: 1.2rem;
+      margin: 0 0 5px 0;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 0.9rem;
+      margin: 0 0 5px 0;
+      font-family: $font-secondary;
+    }
+
+    span {
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+  }
+
+  &:hover &__overlay {
+    opacity: 1;
   }
 }
+

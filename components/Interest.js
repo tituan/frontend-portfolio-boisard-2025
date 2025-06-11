@@ -2,40 +2,57 @@
 import Link from 'next/link';
 import Image from "next/image";
 import Slider from "react-slick";
+import { useRef } from 'react';
 
 const galleryItems = [
   {
-    src: "/img/bronx_slide.jpg",
-    alt: "Bronx Slide",
-    link: "https://picsum.photos/640/360",
+    type: "image",
+    src: "/img/photo-01.jpg",
+    alt: "London Ontario - Car",
+    title: "Imperial",
+    description: "Imperial Car vintage from my trip in Canada.",
+    date: "2025",
   },
   {
-    src: "/img/death.jpg",
-    alt: "Death",
-    link: "https://picsum.photos/640/360?2",
+    type: "video",
+    src: "/videos/dji-villeneuve.mp4",
+    alt: "Urban Motion",
+    title: "Urban Motion",
+    description: "Dynamique de la ville en mouvement.",
+    date: "2023",
   },
   {
-    src: "/img/bronx2_slide.jpg",
-    alt: "Bronx 2 Slide",
-    link: "https://picsum.photos/640/360?3",
-  },
-  {
-    src: "/img/player2.jpg",
+    type: "image",
+    src: "/img/photo-02.jpg",
     alt: "Player 2",
-    link: "https://picsum.photos/640/360?4",
+    title: "Player Two",
+    description: "L’univers vidéoludique rétro.",
+    date: "2021",
   },
   {
-    src: "/img/bronx3_slide.jpg",
-    alt: "Bronx 3 Slide",
-    link: "https://picsum.photos/640/360?5",
+    type: "video",
+    src: "/videos/dji-meze.mp4",
+    alt: "Lights",
+    title: "Night Lights",
+    description: "Lumières de la nuit new-yorkaise.",
+    date: "2020",
   },
-];
-
-const interests = [
-  "#PHOTOGRAPHIE",
-  "#MUSIQUE",
-  "#ART",
-  "#BASKET",
+  {
+    type: "image",
+    src: "/img/photo-03.jpg",
+    alt: "Player 2",
+    title: "Player Two",
+    description: "L’univers vidéoludique rétro.",
+    date: "2021",
+  },
+  {
+    type: "video",
+    src: "/videos/dji-paris.mp4",
+    alt: "Urban Motion",
+    title: "Urban Motion",
+    description: "Dynamique de la ville en mouvement.",
+    date: "2023",
+  },
 ];
 
 export default function Interest() {
@@ -48,7 +65,7 @@ export default function Interest() {
     arrows: false,
     responsive: [
       {
-        breakpoint: 768, // mobile
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           arrows: false,
@@ -64,42 +81,78 @@ export default function Interest() {
         <div className="interest__content">
           <p className="interest__content__title">Développeur web mais pas que !</p>
           <p className="interest__content__text">
-            La photographie est une passion qui me permet d&rsquo;exprimer ma créativité et de capturer des moments précieux. À travers mes clichés, j&rsquo;essaie de transmettre des émotions et de raconter des histoires visuelles.
+            La photographie est une passion qui me permet d&rsquo;exprimer ma créativité et de capturer des moments précieux.
           </p>
           <p className="interest__content__text">
-            La musique et l&rsquo;art occupent une place essentielle dans ma vie. Ils me permettent d&rsquo;explorer ma créativité, de m&rsquo;exprimer et d&rsquo;apprécier la beauté qui nous entoure.
+            La musique et l&rsquo;art occupent une place essentielle dans ma vie.
           </p>
         </div>
         <div className="interest__galery">
           <Slider {...settings} className="interest__galery__wrapper">
             {galleryItems.map((item, i) => (
-              <div className="itemGalery" key={i}>
-                {/* <Link href={item.link} target="_blank" rel="noopener noreferrer" className="itemGalery__pic">
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    width={400}
-                    height={250}
-                    className="itemGalery__pic__img"
-                  />
-                </Link> */}
-                <div className="itemGalery__pic">
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    width={400}
-                    height={250}
-                    className="itemGalery__pic__img"
-                  />
-                </div>
-              </div>
+              <GalleryItem key={i} item={item} />
             ))}
           </Slider>
         </div>
-        <div className="interest__more">
-          {interests.map((interest, i) => (
-            <p key={i}>{interest}</p>
-          ))}
+      </div>
+    </div>
+  );
+}
+
+function GalleryItem({ item }) {
+  const videoRef = useRef(null);
+
+  const handleMouseEnter = () => {
+    if (item.type === "video" && videoRef.current) {
+      const video = videoRef.current;
+      if (video.paused) {
+        video.play().catch((error) => {
+          console.warn("Play interrupted:", error);
+        });
+      }
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (item.type === "video" && videoRef.current) {
+      const video = videoRef.current;
+      if (!video.paused) {
+        video.pause();
+        video.currentTime = 0;
+      }
+    }
+  };
+
+  return (
+    <div className="itemGalery" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      <div className="itemGalery__pic">
+        {item.type === "image" && (
+          <Image
+            src={item.src}
+            alt={item.alt}
+            width={400}
+            height={250}
+            className="itemGalery__pic__img"
+          />
+        )}
+        {item.type === "video" && (
+          <video
+            ref={videoRef}
+            src={item.src}
+            width={400}
+            height={250}
+            muted
+            loop
+            playsInline
+            preload="auto"  // on change ici
+            className="itemGalery__pic__video"
+            />
+        )}
+
+        <div className="itemGalery__overlay">
+          <h3>{item.title}</h3>
+          <p>{item.description}</p>
+          <span>{item.date}</span>
         </div>
       </div>
     </div>
