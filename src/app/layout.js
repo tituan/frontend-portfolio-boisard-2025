@@ -2,6 +2,7 @@ import { Roboto, Geist, Geist_Mono, Courier_Prime } from "next/font/google";
 import '../../styles/main.scss';
 import '../../lib/fontawesome';
 import AnalyticsProvider from '../../lib/AnalyticsProvider'; 
+import AppWrapper from '../../components/AppWrapper';
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -59,8 +60,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body className={`${roboto.variable} ${geistSans.variable} ${geistMono.variable} ${courierPrime.variable}`}>
-        <AnalyticsProvider /> {/* On injecte Google Analytics ici */}
-        {children}
+        <AppWrapper>
+          <AnalyticsProvider />
+          {children}
+        </AppWrapper>
       </body>
     </html>
   );

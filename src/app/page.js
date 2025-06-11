@@ -19,7 +19,7 @@ export default function Home() {
       <Header />
       <main className="main">
         <div className="main__container">
-          <FadeInSection><Hero /></FadeInSection>
+          <Hero />
           <FadeInSection><Presentation /></FadeInSection>
           <FadeInSection><Skill /></FadeInSection>
           <FadeInSection><Project /></FadeInSection>
