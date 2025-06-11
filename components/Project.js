@@ -42,7 +42,7 @@ const projectsPerso = [
     alt: "Capsol",
     link: "https://be-capsol.com/",
     description:
-      "Conception complète du projet Capsol, de la création de l&rsquo;identité visuelle au développement du site web responsive.",
+      "Conception complète du projet Capsol, de la création de l'identité visuelle au développement du site web responsive.",
   },
   {
     title: "Kiddiz",
