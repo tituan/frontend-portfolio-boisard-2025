@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://antoineboisard.fr
+
+# Sitemaps
+Sitemap: https://antoineboisard.fr/sitemap.xml
