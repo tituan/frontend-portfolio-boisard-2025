@@ -34,7 +34,7 @@ export default function Hero() {
         style={{ y: yBackground }}
       >
         <Image
-          src="/img/background.jpg"
+          src="/img/background-02.png"
           alt="background"
           fill 
           className="object-cover" 
