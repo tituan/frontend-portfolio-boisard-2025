@@ -58,6 +58,7 @@ export default function Project() {
   return (
     <div id="project" className="project">
       <div className="project__container">
+        <p className="project__title">Du design à la production</p>
         <p className="project__description">
           En tant que développeur web front-end, j&rsquo;ai eu l&rsquo;occasion de mener à bien une grande variété de projets, aussi bien dans un cadre professionnel que personnel. J&rsquo;ai notamment travaillé sur des sites vitrines, des plateformes interactives ainsi que des applications mobiles.
         </p>

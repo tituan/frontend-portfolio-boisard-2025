@@ -5,7 +5,7 @@ import '../../lib/fontawesome';
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
-  weight: ["400", "700"], // Ajoute "300", "500" si tu veux
+  weight: ["100", "200", "400", "700"], 
   display: "swap",
 });
 
@@ -22,7 +22,7 @@ const geistMono = Geist_Mono({
 const courierPrime = Courier_Prime({
   variable: "--font-courier-prime",
   subsets: ["latin"],
-  weight: ["400", "700"], // 400 = normal, 700 = bold (adapte selon tes besoins)
+  weight: ["400", "700"],
   display: "swap",
 });
 
