@@ -22,7 +22,7 @@ export default function Home() {
           <FadeInSection><Hero /></FadeInSection>
           <FadeInSection><Presentation /></FadeInSection>
           <FadeInSection><Skill /></FadeInSection>
-          <Project />
+          <FadeInSection><Project /></FadeInSection>
           <FadeInSection><Quote /></FadeInSection>
           <FadeInSection><Interest /></FadeInSection>
         </div>
