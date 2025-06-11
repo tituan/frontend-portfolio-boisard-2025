@@ -24,10 +24,11 @@ body {
     font-family: var(--font-roboto), sans-serif; 
 }
 
+
 .loader__overlay {
   position: fixed;
   inset: 0;
-  background-color: white;
+  background-color: #fcfdf9;;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,6 +41,3 @@ body {
   height: 120px;
   z-index: 10;
 }
-
-
-

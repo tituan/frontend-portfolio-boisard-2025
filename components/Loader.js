@@ -4,42 +4,48 @@ import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
 
-export default function Loader({ onFinish }) {
-  const overlay = useAnimation();
-  const logo    = useAnimation();
+export default function Loader({ onFinish, logoScale = 2 }) {
+  const logoCtrl    = useAnimation();
+  const overlayCtrl = useAnimation();
 
   useEffect(() => {
     (async () => {
-      // 1) Logo fade-in rapide
-      await logo.start({ opacity: 1, scale: 2 }, { duration: 0.3, ease: 'linear' });
-      await new Promise(r => setTimeout(r, 10));
+      // 1️⃣ Fade-in du logo (opacity) + scale initial à 1
+      await logoCtrl.start(
+        { opacity: 1, scale: 1 },
+        { duration: 0.3, ease: 'linear' }
+      );
 
-      // 2) Clip-path polygon grandit
-      await overlay.start({
-        clipPath: [
-          'polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)',  // point central
-          'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)'   // tout l'écran
-        ]
-      }, { duration: 1, ease: 'linear' });
+      // 2️⃣ Pause de 0.3 s
+      await new Promise(r => setTimeout(r, 300));
 
-      // 3) Fade-out
-      await overlay.start({ opacity: 0 }, { duration: 0.3, ease: 'linear' });
+      // 3️⃣ Scale du logo à la valeur désirée
+      await logoCtrl.start(
+        { scale: logoScale },
+        { duration: 0.6, ease: 'linear' }
+      );
 
+      // 4️⃣ Fade-out de l’overlay en 0.4 s
+      await overlayCtrl.start(
+        { opacity: 0 },
+        { duration: 0.4, ease: 'linear' }
+      );
+
+      // 5️⃣ On révèle l’app
       onFinish();
     })();
-  }, [overlay, logo, onFinish]);
+  }, [logoCtrl, overlayCtrl, onFinish, logoScale]);
 
   return (
     <motion.div
       className="loader__overlay"
-      initial={{ clipPath: 'polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)', opacity: 1 }}
-      animate={overlay}
+      initial={{ opacity: 1 }}
+      animate={overlayCtrl}
     >
       <motion.div
         className="loader__logo"
         initial={{ opacity: 0, scale: 0.5 }}
-        animate={logo}
-        transition={{ duration: 0.3, ease: 'linear' }}
+        animate={logoCtrl}
       >
         <Image
           src="/img/new-logo-ab.svg"
