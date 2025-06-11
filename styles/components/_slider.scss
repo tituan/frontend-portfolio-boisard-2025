@@ -28,15 +28,15 @@
     height: auto!important;
 
     button {
-        margin: 0 2px!important;
+        margin: 0 1px!important;
       text-indent: -9999px;  // masque le texte à l'intérieur
       width: 10px!important;           // longueur de la barre (modifie ici si tu veux plus court ex: 10px)
-      height: 5px!important;           // épaisseur de la barre
+      height: 10px!important;           // épaisseur de la barre
       background-color: rgba(255, 255, 255, 0.4)!important; // couleur inactif
       border: none;
       display: inline-block;
       transition: background-color 0.3s ease;
-      border-radius: 2px;   // rend la barre bien arrondie aux extrémités
+      border-radius: 10px;   // rend la barre bien arrondie aux extrémités
       padding: 0;
       padding: 0!important;
       cursor: pointer;

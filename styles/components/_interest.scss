@@ -85,20 +85,18 @@
 // Galerie portrait optimisée mobile
 .itemGalery {
     cursor: pointer;
-  width: 100%;
-  padding: 0 10px;
-  margin-bottom: 20px;
-  position: relative;
-  max-width: 380px; // <-- taille fixe plus large de chaque slide (ajustable selon ton rendu)
-
+    width: 100%;
+    // padding: 0 10px;
+    margin-bottom: 20px;
+    position: relative;
+    max-width: 380px; // <-- taille fixe plus large de chaque slide (ajustable selon ton rendu)
+    margin-left: auto;
+    margin-right: auto;
   @media only screen and (min-width: 850px) {
     max-width: 400px;
-    padding: 0 20px;
+    padding: 0 10px;
     margin-bottom: 0;
   }
-
-  margin-left: auto;
-  margin-right: auto;
 
   &__pic {
     position: relative;
