@@ -10,6 +10,7 @@ import Project from "../../components/Project";
 import Quote from "../../components/Quote";
 import Footer from "../../components/Footer";
 import Interest from "../../components/Interest";
+import FadeInSection from "../../components/FadeInSection";
 
 
 export default function Home() {
@@ -18,15 +19,15 @@ export default function Home() {
       <Header />
       <main className="main">
         <div className="main__container">
-          <Hero />
-          <Presentation />
-          <Skill />
-          <Project />
-          <Quote />
-          <Interest />
+          <FadeInSection><Hero /></FadeInSection>
+          <FadeInSection><Presentation /></FadeInSection>
+          <FadeInSection><Skill /></FadeInSection>
+          <FadeInSection><Project /></FadeInSection>
+          <FadeInSection><Quote /></FadeInSection>
+          <FadeInSection><Interest /></FadeInSection>
         </div>
       </main>
-      <Footer />  
+      <Footer />
     </div>
   );
 }
