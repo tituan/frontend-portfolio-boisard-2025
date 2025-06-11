@@ -40,7 +40,7 @@
       &__text {
         padding: 6px 12px;
         background-color: $color-white;
-        font-family: "Courier Prime";
+        font-family: $font-secondary;
         text-transform: uppercase;
         color: $color-black;
         font-size: 0.9rem;
@@ -63,7 +63,7 @@
       }
       &__label {
         font-size: .75rem;
-        font-family: "Roboto", sans-serif;
+        font-family: $font-primary;
         text-transform: uppercase;
         margin-bottom: 5px;
         @media only screen and (min-width: 850px) {
@@ -103,7 +103,7 @@
       padding: 0 0 100px 50px;
       ul li {
         font-size: 1rem;
-        font-family: "Courier Prime";
+        font-family: $font-secondary;
         margin-bottom: 40px;
         color: $color-white;
         &:last-child { margin-bottom: 0; }

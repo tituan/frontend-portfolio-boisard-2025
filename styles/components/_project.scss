@@ -47,7 +47,7 @@
     }
   &__description {
     font-size: .75rem;
-    font-family: "Courier Prime";
+    font-family: $font-secondary;
     color: $color-dark;
     line-height: 2;
      font-weight: 700;
@@ -59,7 +59,7 @@
   }
   &__list {
 
-    font-family: "Courier Prime";
+    font-family: $font-secondary;
     color: $color-dark;
     line-height: 1.5;
     margin-top: 10px;
@@ -159,7 +159,7 @@
     }
   }
   &__content {
-    font-family: "Roboto", sans-serif;
+    font-family: $font-primary;
     padding: 20px;
     background-color: $color-dark;
     border-radius: 0 0 8px 8px;
@@ -178,7 +178,7 @@
     }
     &__description {
       color: $color-white;
-      font-family: "Courier Prime";
+      font-family: $font-secondary;
       font-size: .75rem;
       margin-bottom: 20px;
       line-height: 1.4;
@@ -190,7 +190,7 @@
       font-size: .6875rem;
       text-decoration: none;
       color: $color-white;
-      font-family: "Courier Prime";
+      font-family: $font-secondary;
       letter-spacing: 0;
       display: block;
       width: auto;

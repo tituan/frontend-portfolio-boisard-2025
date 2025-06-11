@@ -40,7 +40,7 @@
     &__text {
       font-size: .9375rem;
       line-height: 1.2;
-      font-family: "Courier Prime";
+      font-family: $font-secondary;
       margin-bottom: 15px;
     }
   }
@@ -60,7 +60,7 @@
     display: flex;
     flex-wrap: wrap;
     color: $color-white;
-    font-family: "Roboto", sans-serif;
+    font-family: $font-primary;
     font-weight: 700;
     font-size: .875rem;
     p {
