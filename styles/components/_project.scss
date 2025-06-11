@@ -5,7 +5,7 @@
   position: relative;
   padding: 60px 20px;
   border-bottom: 2px solid $color-dark;
-  background-color: #fcfdf9;
+  background-color: $color-off-white;
   @media only screen and (min-width: 850px) {
     padding: 60px 100px;
   }
@@ -164,7 +164,7 @@
     background-color: $color-dark;
     border-radius: 0 0 8px 8px;
     border-width: 0 2px 2px 2px;
-    border-color: #000;
+    border-color: $color-black;
     border-style: solid;
     @media only screen and (min-width: 850px) {
       padding: 25px 20px;

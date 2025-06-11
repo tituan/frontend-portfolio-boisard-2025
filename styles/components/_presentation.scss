@@ -2,10 +2,10 @@
 
 .presentation {
     scroll-margin-top: 70px;
-  background-color: #fcfdf9;
+  background-color: $color-off-white;
   padding: 60px 20px;
   @media only screen and (min-width: 850px) {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid $color-black;
     padding: 60px 100px;
   }
   &__container {
@@ -54,7 +54,7 @@
     &__link {
       font-size: .9375rem;
       font-family: "Roboto", sans-serif;
-      color: #000;
+      color: $color-black;
       width: fit-content;
       margin: 0 0 0 auto;
       @media only screen and (min-width: 850px) {

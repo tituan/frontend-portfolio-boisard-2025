@@ -1,9 +1,9 @@
 @import '../base/_variables'; 
 
 .patchTxt {
-  color: #000;
+  color: $color-black;
   padding: 7px 10px;
-  border: 2px solid #000;
+  border: 2px solid $color-black;
   background-color: $color-white;
   width: fit-content;
   text-transform: uppercase;
