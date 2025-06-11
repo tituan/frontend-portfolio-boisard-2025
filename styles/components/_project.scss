@@ -1,4 +1,4 @@
-@import '../base/_variables'; 
+@use '../base/variables' as *;
 
 .project {
     scroll-margin-top: 70px;

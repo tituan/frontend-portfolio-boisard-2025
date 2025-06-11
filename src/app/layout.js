@@ -1,6 +1,7 @@
 import { Roboto, Geist, Geist_Mono, Courier_Prime } from "next/font/google";
 import '../../styles/main.scss';
 import '../../lib/fontawesome';
+import AnalyticsProvider from '../../lib/AnalyticsProvider'; 
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -50,14 +51,17 @@ export const metadata = {
     card: "summary_large_image",
     title: "Antoine BOISARD - Dev Front End",
     description: "Développeur web et photographe passionné",
-    images: ["/img/twitter-image.jpg"], // Mettez une image dans public/img/
+    images: ["/img/twitter-image.jpg"],
   },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fr"><body className={`${roboto.variable} ${geistSans.variable} ${geistMono.variable} ${courierPrime.variable}`}>
-      {children}
-    </body></html>
+    <html lang="fr">
+      <body className={`${roboto.variable} ${geistSans.variable} ${geistMono.variable} ${courierPrime.variable}`}>
+        <AnalyticsProvider /> {/* On injecte Google Analytics ici */}
+        {children}
+      </body>
+    </html>
   );
 }
