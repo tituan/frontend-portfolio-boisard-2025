@@ -97,6 +97,9 @@ export default function Skill() {
                 </h3>
                 <div className="skill__category__list">
                     <div className="skill__category__list__text">
+                        User-friendly AI
+                    </div>
+                    <div className="skill__category__list__text">
                         Travail en équipe
                     </div>
                     <div className="skill__category__list__text">
